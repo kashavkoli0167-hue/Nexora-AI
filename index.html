@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora-AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- sidebar -->
+         <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <aside class="sidebar">
+            <h2 class="logo">Nexora<span>AI</span></h2>
+
+            <button class="new-chat-btn">
+                &#10022; New Chat
+            </button>
+
+            <div class="chat-history">
+                <p class="history-title">Recent Chats</p>
+                <div class="history-list" id="historyList"></div>
+                <p class="empty-history" id="emptyHistory">Your conversations will appear here.</p>
+            </div>
+
+        </aside>
+
+        <!-- Main Chat Area -->
+         <main class="chat-area">
+
+            <header class="top-bar">
+                <button class="menu-btn" id="menuBtn" aria-lable="Open chat history">  ☰</button>
+                <p>AI Assistant</p>
+            <div class="top-bar-right">
+    <div class="mini-ai-icon" id="miniAiIcon" aria-label="Nexora AI">
+        &#10022;
+    </div>
+
+    <span class="status">&#9679; online</span>
+    <button class="share-btn">&#8599; Share</button>
+</div>
+            </header>
+
+            <section class="welcome-screen" id="welcomeScreen">
+                <div class="ai-icon">&#10022;</div>
+                <h1>Welcome to <span>Nexora AI</span></h1>
+                <p>Your ideas, conversations, and creativity start here.</p>
+            </section>
+
+            <div class="chat-messages" id="chatMessages"></div>
+
+            <form class="chat-input-area" id="ChatForm">
+                <input type="text" id="userInput" placeholder="Message Nexora AI..." autocomplete="off">
+
+                <button type="submit" id="sendBtn">&#8593;</button>
+            </form>
+
+            <p class="disclaimer">
+                Nexora AI can make mistakes. Verify important information.
+            </p>
+
+
+         </main>
+        </div>
+    
+<!-- DOMPurify: sanitizes rendered HTML -->
+
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.3.0/dist/purify.min.js"></script>
+
+<!-- Start the frontend as an ES module -->
+
+<script type="module" src="script.js"></script>
+
+</body> </html>

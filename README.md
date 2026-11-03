@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ Nexora AI
+# ✦ Nexora AI
 
 ### Your AI Chat Companion
 
